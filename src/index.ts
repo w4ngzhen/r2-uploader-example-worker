@@ -36,7 +36,7 @@ app.put('/:key{.*}', Put)
 app.delete('/:key{.*}', Delete)
 
 app.all('*', c => {
-  return c.text('404 Not Found')
+    return c.text('404 Not Found')
 })
 
 export default app
